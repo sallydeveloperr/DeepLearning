@@ -28,3 +28,33 @@ print(soup.select('td')[1].text.strip())    #매장명
 print(soup.select('td')[2].text.strip())    #현황
 print(soup.select('td')[3].text.strip())    #주소
 print(soup.select('td')[5].text.strip())    #전화번호
+
+#모든 페이지에 대해서 출력
+print(store_rows[0])
+for idx, row in enumerate (store_rows):
+    print(idx+1)
+    print(row.select('td')[0].text.strip())    #지역
+    print(row.select('td')[1].text.strip())    #매장명
+    print(row.select('td')[2].text.strip())    #현황
+    print(row.select('td')[3].text.strip())    #주소
+    print(row.select('td')[5].text.strip())    #전화번호
+    print('*' * 100)
+
+#데이터베이스에 접속하는 방법!
+#insert 쿼리문을 이용해서 수집한 데이터를 DB에 저장
+#DB 접속
+    
+import pymysql
+from dotenv import load_dotenv
+import os
+# .env 로드
+load_dotenv()
+
+# 1. DB 연결
+def get_connection():
+    return pymysql.connect(
+        host = os.getenv('DB_HOST'),
+        user = os.getenv('DB_USER'),
+        password = os.getenv('DB_PASSWORD'),
+        database=os.getenv('DB_NAME')
+    )
