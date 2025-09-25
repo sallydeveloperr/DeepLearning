@@ -22,6 +22,7 @@ str_table_rows = '#contents > div.content > fieldset > fieldset > div.tableType0
 soup.select(str_table_rows)     #soup.select('tbody > tr')로 작성해도 됨
 #soup.select('tbody > tr') tbody가 한개밖에 없어서 가능한 것, 만약 여러개면 가장 먼저 만나는 body 출력
 store_rows = soup.select(str_table_rows)
+<<<<<<< HEAD
 store_lists=[]
 #모든 페이지에 대해서 출력
 for row in store_rows:
@@ -35,3 +36,11 @@ for row in store_rows:
         )
     )
 print(store_lists)
+=======
+print(store_rows[0])
+print(soup.select('td')[0].text.strip())    #지역
+print(soup.select('td')[1].text.strip())    #매장명
+print(soup.select('td')[2].text.strip())    #현황
+print(soup.select('td')[3].text.strip())    #주소
+print(soup.select('td')[5].text.strip())    #전화번호
+>>>>>>> 5e579a267cea0bd6c01b24159ed2f7bf7c98af08

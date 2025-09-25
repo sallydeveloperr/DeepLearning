@@ -145,4 +145,4 @@ merged[["period","sido","sigungu","car_type","usage_type","count","population","
 )
 
 print("✅ CAR_REGIST_SIDO 테이블 저장 완료")
-print("✅ CAR_SUPPLY_RATE 테이블 저장 완료")
+print("✅ CAR_SUPPLY_RATE 테이블 저장 완료") 
