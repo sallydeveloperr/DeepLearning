@@ -12,4 +12,10 @@
 .ipynb_checkpoints/
 **/.ipynb_checkpoints/
 
-credit.csv
+data/
+
+extracted_files/
+
+*.zip
+
+*.txt
