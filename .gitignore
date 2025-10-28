@@ -19,3 +19,12 @@ extracted_files/
 *.zip
 
 *.txt
+deep-learning/cifar-10-batches-py/batches.meta
+deep-learning/cifar-10-batches-py/data_batch_1
+deep-learning/cifar-10-batches-py/data_batch_2
+deep-learning/cifar-10-batches-py/data_batch_3
+deep-learning/cifar-10-batches-py/data_batch_4
+deep-learning/cifar-10-batches-py/data_batch_5
+deep-learning/cifar-10-batches-py/readme.html
+deep-learning/cifar-10-batches-py/test_batch
+deep-learning/cifar-10-python.tar.gz
